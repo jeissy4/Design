@@ -1,0 +1,102 @@
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* adjust this based on header height */
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-top: 100px;
+  width: 100vw;
+}
+
+.visit {
+  background: white;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.2); /* subtle blueviolet shadow */
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin-top: 400px;
+  margin-bottom: 100px;
+  
+}
+
+.visit h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.visit form div {
+  margin-bottom: 1.2rem;
+}
+
+.visit label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.visit input[type="tel"],
+.visit input[type="text"] {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid blueviolet;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #222;
+  background-color: white;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+}
+
+.visit input[type="tel"]::placeholder,
+.visit input[type="text"]::placeholder {
+  color: blueviolet;
+  opacity: 0.7;
+}
+
+.visit input[type="tel"]:focus,
+.visit input[type="text"]:focus {
+  border-color: rebeccapurple;
+  box-shadow: 0 0 6px rebeccapurple;
+}
+
+.visit button {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.visit button:hover {
+  background-color: rebeccapurple;
+}
+
+
+.visit input[type="date"] {
+  background-color: white;
+  border: 2px solid blueviolet; /* Blueviolet border */
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  color: black; /* input text color */
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+

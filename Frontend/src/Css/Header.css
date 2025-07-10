@@ -1,0 +1,61 @@
+header {
+position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: blueviolet;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 1000;
+    background-color: white; /* White background for the header */
+
+}
+
+header h1,
+header h3 {
+    text-align: center;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+header h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.2s;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+}
+
+.nav-links li a:hover,
+.nav-links li a:active {
+    color: #007bff; /* Blue on hover/active */
+    background: #e6f0ff;
+}

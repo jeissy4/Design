@@ -1,0 +1,58 @@
+.home {
+    background-color: white; /* White background for the home section */
+    color: blue; /* Blue text color */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center the text */
+    margin-top: 400px;
+}
+
+.card-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center; /* Center the cards */
+    gap: 15px; /* Space between cards */
+}
+
+.card {
+    background-color: white; /* White background for cards */
+    border: 2px solid blue; /* Blue border for cards */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow of content */
+    width: 12%; /* Set width to allow 5 cards in a row, making them smaller */
+    text-align: center; /* Center text in cards */
+    transition: transform 0.2s; /* Smooth scaling effect on hover */
+}
+
+.card img {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make images round */
+}
+
+.card h3 {
+    margin: 5px 0; /* Space above and below the heading */
+    font-size: 1em; /* Adjust font size for smaller cards */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Increase font size for the paragraph */
+.home p {
+    font-size: 1.2em; /* Increase font size for the paragraph */
+    line-height: 1.5; /* Improve line height for readability */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        width: 35%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%; /* Full width for very small screens */
+    }
+}

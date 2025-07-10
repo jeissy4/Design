@@ -1,0 +1,25 @@
+footer {
+  background-color: white; /* Dark purple */
+  color: blueviolet;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  /* Animation */
+  animation: pulseGlow 3s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(48, 25, 52, 0.7);
+  user-select: none;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 5px #b19cd9, 0 0 10px #b19cd9;
+  }
+  50% {
+    text-shadow: 0 0 15px #d8bfd8, 0 0 20px #d8bfd8;
+  }
+}

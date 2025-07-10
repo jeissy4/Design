@@ -1,0 +1,65 @@
+/* Finance.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.finance {
+    background-color: white; /* White background for the finance section */
+    padding: 20px; /* Padding around the content */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 200px;
+}
+
+h2 {
+    background-color: #8A2BE2; /* Blue Violet */
+    color: white; /* White text color */
+    padding: 10px; /* Padding around the header */
+    text-align: center; /* Center the header text */
+    border-radius: 5px; /* Rounded corners for the header */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: black; /* Black label color */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="date"] {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 15px; /* Space below input fields */
+    border: 2px solid #8A2BE2; /* Blue Violet border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* White background for input fields */
+    color: black; /* Black text color */
+}
+
+input::placeholder {
+    color: white; /* White placeholder text */
+}
+
+button {
+    width: 100%; /* Full width for the button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #8A2BE2; /* Blue Violet */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #7A1B9D; /* Darker shade of Blue Violet on hover */
+}
+
+.Toastify__toast {
+    background-color: #8A2BE2; /* Blue Violet for toast notifications */
+    color: white; /* White text color for toast notifications */
+}
