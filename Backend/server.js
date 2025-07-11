@@ -161,8 +161,7 @@ app.get('/api/report', (req, res) => {
 
 
 const PORT = process.env.PORT || 4000;
-
-
-app.listen(4000,()=>{
-    console.log("server is running on port 4000");
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}`);
 });
+
