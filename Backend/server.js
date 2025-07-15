@@ -10,18 +10,18 @@ dotenv.config();
   app.use(cors());
   app.use(express.json());
 
-  // Connect to PlanetScale using mysql2/promise
+  
   const db = await mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
-    // ssl: { rejectUnauthorized: true }
+    
   });
 
   console.log('MySQL connected successfully!');
 
-  // Registration endpoint with duplicate phone number check
+  // Registration 
   app.post('/registration', async (req, res) => {
     const { phone_no, name } = req.body;
 
@@ -49,7 +49,7 @@ dotenv.config();
     }
   });
 
-  // Visit endpoint with check for registered customer
+  // Visit
   app.post('/visit', async (req, res) => {
     const { name, phone_no, design_type, size, visit_date } = req.body;
 
@@ -77,7 +77,7 @@ dotenv.config();
     }
   });
 
-  // Finance endpoint with calculation
+  // Finance 
   app.post('/finance', async (req, res) => {
     const { name, phone_no, total, amount_paid, payment_date } = req.body;
 
@@ -98,7 +98,7 @@ dotenv.config();
     }
   });
 
-  // Search endpoint
+  // Search
   app.get('/api/search', async (req, res) => {
     const { query } = req.query;
 
@@ -117,7 +117,7 @@ dotenv.config();
     }
   });
 
-  // Report endpoint
+  // Report 
   app.get('/api/report', async (req, res) => {
     const { phone_no } = req.query;
 
