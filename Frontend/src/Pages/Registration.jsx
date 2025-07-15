@@ -14,23 +14,29 @@ export default class Registration extends Component {
             name:'',
         }
     }
-    handleSubmit = (event) => {
-    event.preventDefault()
+  handleSubmit = async (event) => {
+  event.preventDefault();
 
-    const { phone_no, name } = this.state;
-    try {
-        const response = Axios.post('http://localhost:4000/registration', {
-            phone_no,
-            name,
-        });
-        this.setState({message: response.data.message});
-    } catch (error) {
-        console.error("Error submitting registration data:", error);
-        
+  const { phone_no, name } = this.state;
+
+  try {
+    const response = await Axios.post('http://localhost:4000/registration', {
+      phone_no,
+      name,
+    });
+
+    toast.success(response.data.message);
+  } catch (error) {
+    if (error.response && error.response.status === 409) {
+      toast.warning(error.response.data.message);
+    } else {
+      toast.error("use a unique phone no .");
+      console.error("Error submitting registration data:", error);
+    }
   }
+};
 
-    toast.success("Registration successful!");
-}
+
     render(){
         return(
             <div className = "main-content">
