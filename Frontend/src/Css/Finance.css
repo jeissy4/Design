@@ -4,6 +4,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     margin-top: 100px;
+    
+    
 }
 
 .finance {
@@ -12,7 +14,8 @@ body {
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin-top: 200px;
-}
+    margin: 0;
+    
 
 h2 {
     background-color: #8A2BE2; /* Blue Violet */
@@ -62,4 +65,4 @@ button:hover {
 .Toastify__toast {
     background-color: #8A2BE2; /* Blue Violet for toast notifications */
     color: white; /* White text color for toast notifications */
-}
+}}

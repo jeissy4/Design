@@ -1,69 +1,150 @@
-/* Search.css */
-
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  color: black;
+}
 
 .search {
-    background-color: white; /* White background for the search section */
-    padding: 20px; /* Padding around the content */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.2);
+  font-family: Arial, sans-serif;
+  width: 100%;
 }
 
-h2 {
-    background-color: #8A2BE2; /* Blue Violet */
-    color: white; /* White text color */
-    padding: 10px; /* Padding around the header */
-    text-align: center; /* Center the header text */
-    border-radius: 5px; /* Rounded corners for the header */
+.search h2 {
+  color: white;
+  background-color: blueviolet;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-label {
-    display: block; /* Block display for labels */
-    margin-bottom: 5px; /* Space below labels */
-    color: black; /* Black label color */
+.search input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-input[type="text"] {
-    width: 100%; /* Full width for input fields */
-    padding: 10px; /* Padding inside input fields */
-    margin-bottom: 15px; /* Space below input fields */
-    border: 2px solid #8A2BE2; /* Blue Violet border */
-    border-radius: 5px; /* Rounded corners */
-    background-color: white; /* White background for input fields */
-    color: black; /* Black text color */
+.search input::placeholder {
+  color: blueviolet;
+  font-style: italic;
 }
 
-input::placeholder {
-    color: white; /* White placeholder text */
+.search button {
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
 }
 
-button {
-    width: 100%; /* Full width for the button */
-    padding: 10px; /* Padding inside the button */
-    background-color: #8A2BE2; /* Blue Violet */
-    color: white; /* White text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+.search button:hover {
+  background-color: purple;
 }
 
-button:hover {
-    background-color: #7A1B9D; /* Darker shade of Blue Violet on hover */
+.search ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-ul {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
+.search li {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
-li {
-    margin: 10px 0; /* Space between list items */
-    cursor: pointer; /* Pointer cursor on hover */
-}
+/* 🟣 REPORT  */
 .report {
-    background-color: #f9f9f9; /* Light background for the report */
-    border: 1px solid #ccc; /* Border around the report */
-    padding: 15px; /* Padding inside the report */
-    margin-top: 20px; /* Space above the report */
-    border-radius: 5px; /* Rounded corners */
+   display: flex;
+    flex-direction: column;
+  
+
+}
+
+.report h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: blueviolet;
+  margin-bottom: 12px;
+}
+
+.report h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: blueviolet;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(138, 43, 226, 0.2);
+  padding-bottom: 5px;
+}
+
+.report ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.report li {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color:whitesmoke;
+}
+
+.report li div {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.report li strong {
+  color: black;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+/* 🟣 IMAGE THUMBNAILS */
+.design-preview {
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #fdf9ff;
+  transition: box-shadow 0.3s ease;
+}
+
+.design-preview:hover {
+  box-shadow: 0 0 12px rgba(138, 43, 226, 0.3);
+}
+
+/* Styling the link below the image */
+.design-preview a {
+  color: blueviolet;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.design-preview a:hover {
+  color: indigo;
+  text-decoration: none;
 }
 

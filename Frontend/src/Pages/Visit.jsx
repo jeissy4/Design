@@ -13,30 +13,36 @@ import '../Css/Visit.css';
             design_type:'',
             size:'',
             visit_date:'',
+            design_image:null,
+            previewUrl:null
         }
     }
 
-       handleSubmit = (event) => {
-        event.preventDefault();
-        const { name, phone_no, design_type, size, visit_date } = this.state;
-        try{
-            const response = Axios.post('http://localhost:4000/visit', {
-                name,
-                phone_no,
-                design_type,
-                size,
-                visit_date,
+handleSubmit = async (event) => {
+  event.preventDefault();
 
-            });
-            this.setState({message: response.data.message});
-        } catch(error){
-            console.error("Error submitting visit data:", error);
-        
-            
-        }
-        
-        toast.success(" successful!")
-      }
+  const { name, phone_no, design_type, size, visit_date, design_image } = this.state;
+  const formData = new FormData();
+
+  formData.append("name", name);
+  formData.append("phone_no", phone_no);
+  formData.append("design_type", design_type);
+  formData.append("size", size);
+  formData.append("visit_date", visit_date);
+  formData.append("design_image", design_image);
+
+  try {
+    const response = await Axios.post('http://localhost:4000/visit', formData, {
+      headers: { 'Content-Type': 'multipart/form-data' }
+    });
+
+    toast.success(response.data.message);
+  } catch (error) {
+    toast.error("Error submitting visit details.");
+    console.error("Visit submission failed:", error);
+  }
+};
+
  render(){
     return(
         <div className="main-content">
@@ -64,10 +70,24 @@ import '../Css/Visit.css';
                     <label>Visit_Date</label>
                     <input type="date" value={this.state.visit_date} onChange={(e) => this.setState({visit_date: e.target.value})} required/>
                 </div>
-                 <div>
-                     <button type="submit">Submit</button>
+                <div>
+           <label>Design Image</label>
+  <input
+    type="file" accept="image/*"  onChange={(e) => { const file = e.target.files[0]; this.setState({ design_image: file, previewUrl: file ? URL.createObjectURL(file) : null, }); }} required />
+</div>
+
+{/* Show uploaded image preview from browser or backend */}
+       {this.state.previewUrl && (
+       <div className="preview-container">
+        <p>Sketch Preview:</p>
+         <img src={this.state.previewUrl} alt="Preview" width="200" style={{ marginTop: "10px", border: "1px solid #ccc", borderRadius: "5px" }}  />
+        </div>
+)}
+
+           <div>
+            <button type="submit">Submit</button>
                 </div>
-            </form>
+          </form>
             <ToastContainer/>
         </div>
         </div>

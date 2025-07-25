@@ -1,5 +1,5 @@
 header {
-position: fixed;
+position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -58,4 +58,52 @@ nav {
 .nav-links li a:active {
     color: #007bff; /* Blue on hover/active */
     background: #e6f0ff;
+}
+/* Parent <li> that contains the dropdown */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown menu (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+}
+
+/* Dropdown menu list items */
+.dropdown-content li {
+  list-style: none;
+  padding: 0;
+}
+
+/* Dropdown links */
+.dropdown-content li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: blueviolet;
+  background-color: white;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-content li a:hover {
+  background-color: #e6f0ff;
+  color: #007bff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }

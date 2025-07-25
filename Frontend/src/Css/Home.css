@@ -4,6 +4,7 @@
     padding: 20px; /* Padding around the content */
     text-align: center; /* Center the text */
     margin-top: 400px;
+    margin: 0;
 }
 
 .card-container {

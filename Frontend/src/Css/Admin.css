@@ -13,6 +13,11 @@ h2 {
     text-align: center;
     font-weight: 700;
 }
+p {
+    text-align: center;
+    color: black; /* Black text color */
+    font-size: 1.2em; /* Increase font size for better readability */
+}
 
 form {
     max-width: 400px;

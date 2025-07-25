@@ -66,15 +66,11 @@ function Admin() {
        <p>Welcome to master's page 😊</p>
      <nav>
          <ul className="nav-links">
-           <li>
-             <Link to="/search">Search</Link>
-           </li>
+    
            <li>
              <Link to="/finance">Finance</Link>
            </li>
-           {/* <li>
-             <Link to="/report">Report</Link>
-           </li> */}
+          
          </ul>
        </nav>
      </div>
