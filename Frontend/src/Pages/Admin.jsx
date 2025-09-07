@@ -68,7 +68,9 @@ function Admin() {
          <ul className="nav-links">
     
            <li>
-             <Link to="/finance">Finance</Link>
+             <Link to="/registration">REGISTRATION</Link>
+             <Link to="/visit">VISIT</Link>
+             <Link to="/finance">FINANCE</Link>
            </li>
           
          </ul>

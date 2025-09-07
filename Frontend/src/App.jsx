@@ -9,6 +9,7 @@ import Visit from './Pages/Visit.jsx';
 import Admin from './Pages/Admin.jsx';
 import Search from './Admin/Search.jsx';
 import Finance from './Admin/Finance.jsx';
+import Image from './KD1.jpg';
 import './App.css';
 
 

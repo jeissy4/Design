@@ -1,48 +1,49 @@
 .home {
-    background-color: white; /* White background for the home section */
-    color: blue; /* Blue text color */
-    padding: 20px; /* Padding around the content */
-    text-align: center; /* Center the text */
+    background-color: lightgray; 
+    color: blue; 
+    padding: 20px;
+    text-align: center; 
     margin-top: 400px;
     margin: 0;
 }
 
 .card-container {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow wrapping of cards */
-    justify-content: center; /* Center the cards */
-    gap: 15px; /* Space between cards */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 15px;
 }
 
 .card {
-    background-color: white; /* White background for cards */
-    border: 2px solid blue; /* Blue border for cards */
-    border-radius: 15px; /* Rounded corners */
-    overflow: hidden; /* Prevent overflow of content */
-    width: 12%; /* Set width to allow 5 cards in a row, making them smaller */
-    text-align: center; /* Center text in cards */
-    transition: transform 0.2s; /* Smooth scaling effect on hover */
+    background-color: lightgray; 
+    border: 2px solid darkslategrey; 
+    border-radius: 15px;
+    overflow: hidden;
+    width: 12%; 
+    text-align: center;
+    transition: transform 0.2s; 
 }
 
 .card img {
-    width: 100%; /* Full width for images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Make images round */
+    width: 100%; 
+    height: auto; 
+    border-radius: 50%; 
 }
 
 .card h3 {
-    margin: 5px 0; /* Space above and below the heading */
-    font-size: 1em; /* Adjust font size for smaller cards */
+    margin: 5px 0; 
+    font-size: 1em; 
+    color:black;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Scale up on hover */
+    transform: scale(1.05); 
 }
 
-/* Increase font size for the paragraph */
+
 .home p {
-    font-size: 1.2em; /* Increase font size for the paragraph */
-    line-height: 1.5; /* Improve line height for readability */
+    font-size: 1.2em; 
+    line-height: 1.5; 
 }
 
 /* Responsive design for smaller screens */

@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: white;
+  background:#333333;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@ body {
 }
 
 .registration {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: lightgray;
   border-radius: 15px;
   padding: 30px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -37,8 +37,8 @@ body {
 
 .registration h2 {
   text-align: center;
-  color: white;
-  background-color: #8A2BE2; /* blue violet */
+  color: black;
+  background-color: white;
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 8px;
@@ -57,7 +57,7 @@ input {
   width: 100%;
   padding: 10px;
   margin-bottom: 18px;
-  border: 2px solid #8A2BE2; /* blue violet */
+  border: 2px solid black; 
   border-radius: 8px;
   font-size: 16px;
   box-sizing: border-box;
@@ -67,7 +67,7 @@ input {
 }
 
 input:focus {
-  border-color: #4B0082; /* dark purple */
+  border-color: black; 
   outline: none;
 
 }
@@ -75,8 +75,8 @@ input:focus {
 button {
   width: 100%;
   padding: 10px;
-  background-color: #8A2BE2; /* blue violet */
-  color: white;
+  background-color: white; 
+  color: black;
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -85,5 +85,5 @@ button {
 }
 
 button:hover {
-  background-color: #5D3FD3;
+  background-color: #FF6F61;
 }

@@ -3,13 +3,13 @@ position: relative;
   top: 0;
   left: 0;
   right: 0;
-  color: blueviolet;
+  color:#FFFFFF;
   padding: 1rem 2rem;
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
   z-index: 1000;
-    background-color: white; /* White background for the header */
+    
 
 }
 
@@ -46,7 +46,7 @@ nav {
 
 .nav-links li a {
     text-decoration: none;
-    color: blueviolet;
+    color: goldenrod;
     font-size: 1.1rem;
     font-weight: 600;
     transition: color 0.2s;
@@ -56,8 +56,8 @@ nav {
 
 .nav-links li a:hover,
 .nav-links li a:active {
-    color: #007bff; /* Blue on hover/active */
-    background: #e6f0ff;
+    color: gold; /* Blue on hover/active */
+    background: goldenrod;
 }
 /* Parent <li> that contains the dropdown */
 .dropdown {
@@ -70,8 +70,8 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: goldenrod;
+  border: 1px gold;
   min-width: 160px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 1000;
@@ -91,16 +91,16 @@ nav {
   display: block;
   padding: 10px 15px;
   text-decoration: none;
-  color: blueviolet;
-  background-color: white;
+  color: black;
+  background-color: gold;
   font-size: 1rem;
   transition: background-color 0.2s, color 0.2s;
 }
 
 /* Hover effect for dropdown items */
 .dropdown-content li a:hover {
-  background-color: #e6f0ff;
-  color: #007bff;
+  background-color: gold;
+  color: goldenrod;
 }
 
 /* Show dropdown on hover */

@@ -1,4 +1,4 @@
-/* Admin.css */
+
 
 body {
     margin: 0;
@@ -7,31 +7,31 @@ body {
 }
 
 h2 {
-    background-color: #8A2BE2; /* Blue Violet */
-    color: white;
+    background-color:darkcyan; 
+    color: black;
     padding: 10px;
     text-align: center;
     font-weight: 700;
 }
 p {
     text-align: center;
-    color: black; /* Black text color */
-    font-size: 1.2em; /* Increase font size for better readability */
+    color: black; 
+    font-size: 1.2em; 
 }
 
 form {
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #8A2BE2; /* Blue Violet */
+    border: 2px solid black; 
     border-radius: 5px;
-    background-color: white; /* White background for the form */
+    background-color: white; 
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    color: black; /* Black label color */
+    color: black; 
     font-weight: 600;
 }
 
@@ -40,7 +40,7 @@ input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 2px solid #8A2BE2; /* Blue Violet border */
+    border: 2px solid black; 
     border-radius: 5px;
     background-color: white; /* White background for input */
     color: black; /* Black text color */
@@ -53,16 +53,16 @@ input::placeholder {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #8A2BE2; /* Blue Violet */
-    color: white;
+    background-color: teal; 
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #7A1B9D; /* Darker shade of Blue Violet on hover */
+    background-color:darkcyan; 
 }
 
 .nav-links {
@@ -76,7 +76,7 @@ button:hover {
 
 .nav-links a {
     text-decoration: none;
-    color: #8A2BE2; /* Blue Violet link color */
+    color: #8A2BE2;
 }
 
 .nav-links a:hover {

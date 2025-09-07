@@ -8,7 +8,7 @@
   margin: 50px auto;
   box-sizing: border-box;
   overflow-y: auto;
-  background-color: #f9f9f9;
+  background-color: lightgray;
   color: black;
 }
 
@@ -22,8 +22,8 @@
 }
 
 .search h2 {
-  color: white;
-  background-color: blueviolet;
+  color: black;
+  background-color: darkcyan;
   padding: 12px 20px;
   font-weight: bold;
   border-radius: 6px;
@@ -34,7 +34,7 @@
 .search input[type="text"] {
   width: 100%;
   padding: 10px;
-  border: 2px solid blueviolet;
+  border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 16px;
   box-sizing: border-box;
@@ -42,13 +42,13 @@
 }
 
 .search input::placeholder {
-  color: blueviolet;
+  color: teal;
   font-style: italic;
 }
 
 .search button {
-  background-color: blueviolet;
-  color: white;
+  background-color: darkcyan;
+  color: black;
   border: none;
   padding: 10px 20px;
   font-weight: bold;
@@ -59,7 +59,7 @@
 }
 
 .search button:hover {
-  background-color: purple;
+  background-color: teal;
 }
 
 .search ul {
@@ -84,14 +84,14 @@
 .report h3 {
   font-size: 22px;
   font-weight: bold;
-  color: blueviolet;
+  color: black;
   margin-bottom: 12px;
 }
 
 .report h4 {
   font-size: 18px;
   font-weight: bold;
-  color: blueviolet;
+  color: black;
   margin-top: 24px;
   margin-bottom: 10px;
   border-bottom: 2px solid rgba(138, 43, 226, 0.2);

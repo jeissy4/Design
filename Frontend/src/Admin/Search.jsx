@@ -107,7 +107,7 @@ export default function Search() {
                             ))}
                         </ul>
 
-                        {/* ✅ Sketch Preview Section */}
+                        {/* report view */}
                         {reportData.visits.some(v => v.image_url) && (
                             <div className="sketch-preview">
                                 <h4>Sketch Preview:</h4>

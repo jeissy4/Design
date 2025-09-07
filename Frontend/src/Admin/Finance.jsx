@@ -2,6 +2,7 @@ import { Component } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Axios from "axios";
+import { Link } from 'react-router-dom';
 import '../Css/Finance.css';
 
 export default class Finance extends Component {
@@ -91,6 +92,8 @@ export default class Finance extends Component {
           </div>
           <div>
             <button type="submit">Submit</button>
+            <Link to="/registration">Registration</Link>
+            <Link to="/visit">Visit</Link>
           </div>
         </form>
         <ToastContainer />

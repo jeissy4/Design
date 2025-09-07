@@ -1,4 +1,4 @@
-/* Finance.css */
+
 
 body {
     margin: 0;
@@ -9,60 +9,60 @@ body {
 }
 
 .finance {
-    background-color: white; /* White background for the finance section */
-    padding: 20px; /* Padding around the content */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: lightgray; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     margin-top: 200px;
     margin: 0;
     
 
 h2 {
-    background-color: #8A2BE2; /* Blue Violet */
-    color: white; /* White text color */
-    padding: 10px; /* Padding around the header */
-    text-align: center; /* Center the header text */
-    border-radius: 5px; /* Rounded corners for the header */
+    background-color: darkcyan; 
+    color: black; 
+    padding: 10px; 
+    text-align: center; 
+    border-radius: 5px; 
 }
 
 label {
-    display: block; /* Block display for labels */
-    margin-bottom: 5px; /* Space below labels */
-    color: black; /* Black label color */
+    display: block; 
+    margin-bottom: 5px; 
+    color: black; 
 }
 
 input[type="text"],
 input[type="tel"],
 input[type="number"],
 input[type="date"] {
-    width: 100%; /* Full width for input fields */
-    padding: 10px; /* Padding inside input fields */
-    margin-bottom: 15px; /* Space below input fields */
-    border: 2px solid #8A2BE2; /* Blue Violet border */
-    border-radius: 5px; /* Rounded corners */
-    background-color: white; /* White background for input fields */
-    color: black; /* Black text color */
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 2px solid black; 
+    border-radius: 5px; 
+    background-color: white; 
+    color: black; 
 }
 
 input::placeholder {
-    color: white; /* White placeholder text */
+    color: white; 
 }
 
 button {
-    width: 100%; /* Full width for the button */
-    padding: 10px; /* Padding inside the button */
-    background-color: #8A2BE2; /* Blue Violet */
-    color: white; /* White text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; 
+    padding: 10px; 
+    background-color: teal; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 
 button:hover {
-    background-color: #7A1B9D; /* Darker shade of Blue Violet on hover */
+    background-color: darkcyan; 
 }
 
 .Toastify__toast {
-    background-color: #8A2BE2; /* Blue Violet for toast notifications */
-    color: white; /* White text color for toast notifications */
+    background-color:teal ;
+    color: white; 
 }}

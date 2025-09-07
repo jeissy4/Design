@@ -2,6 +2,7 @@ import { Component } from "react"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Axios from "axios";
+import { Link } from 'react-router-dom';
 import '../Css/Visit.css';
 
  export default class Visit extends Component {
@@ -72,20 +73,28 @@ handleSubmit = async (event) => {
                 </div>
                 <div>
            <label>Design Image</label>
-  <input
-    type="file" accept="image/*"  onChange={(e) => { const file = e.target.files[0]; this.setState({ design_image: file, previewUrl: file ? URL.createObjectURL(file) : null, }); }} required />
-</div>
+            <input
+              type="file" 
+              accept="image/*"  
+              onChange={(e) => { const file = e.target.files[0]; 
+              this.setState({ design_image: file, previewUrl: file ? URL.createObjectURL(file) : null, }); }} required />
+                </div>
 
 {/* Show uploaded image preview from browser or backend */}
        {this.state.previewUrl && (
        <div className="preview-container">
         <p>Sketch Preview:</p>
-         <img src={this.state.previewUrl} alt="Preview" width="200" style={{ marginTop: "10px", border: "1px solid #ccc", borderRadius: "5px" }}  />
+         <img src={this.state.previewUrl}
+          alt="Preview"
+           width="200" 
+           style={{ marginTop: "10px", border: "1px solid #ccc", borderRadius: "5px" }}  />
         </div>
 )}
 
            <div>
             <button type="submit">Submit</button>
+              <Link to="/registration">Registration</Link>  
+                <Link to="/finance">Finance</Link>
                 </div>
           </form>
             <ToastContainer/>

@@ -3,6 +3,7 @@ import{ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Axios from 'axios';
 import '../Css/Registration.css'; 
+import { Link } from "react-router-dom";
 
 
 
@@ -54,6 +55,8 @@ export default class Registration extends Component {
                     </div>
                     <div>
                         <button type="submit">Submit</button>
+                        <Link to="/visit">Visit</Link>
+                        <Link to="/finance">Finance</Link>
                     </div>
 
                 </form>

@@ -12,7 +12,7 @@
 }
 
 .visit {
-  background: white;
+  background: lightgray;
   padding: 2rem;
   max-width: 1000px;
   margin: 2rem auto;
@@ -28,10 +28,11 @@
 }
 
 .visit h2 {
-  color: white;
+  color: black;
   text-align: center;
   margin-bottom: 1rem;
   font-weight: 700;
+  background-color: darkcyan;
 }
 
 .visit form div {
@@ -49,7 +50,7 @@
 .visit input[type="text"] {
   width: 100%;
   padding: 0.5rem 0.75rem;
-  border: 2px solid blueviolet;
+  border: 2px solid black;
   border-radius: 6px;
   font-size: 1rem;
   color: #222;
@@ -73,10 +74,10 @@
 .visit button {
   width: 100%;
   padding: 0.6rem;
-  background-color: blueviolet;
+  background-color: teal;
   border: none;
   border-radius: 6px;
-  color: white;
+  color: black;
   font-size: 1.1rem;
   font-weight: 700;
   cursor: pointer;
@@ -84,17 +85,17 @@
 }
 
 .visit button:hover {
-  background-color: rebeccapurple;
+  background-color: darkcyan;
 }
 
 
 .visit input[type="date"] {
   background-color: white;
-  border: 2px solid blueviolet; /* Blueviolet border */
+  border: 2px solid black; 
   border-radius: 6px;
   padding: 8px 12px;
   font-size: 1rem;
-  color: black; /* input text color */
+  color: black; 
   outline: none;
   transition: border-color 0.3s ease;
   width: 100%;
